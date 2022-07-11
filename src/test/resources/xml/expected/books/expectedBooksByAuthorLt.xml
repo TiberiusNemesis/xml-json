@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mr:author_list xmlns:mr="http://www.marlo.com.au/training/xquery">
+   <mr:author>
+      <mr:name>Frank Herbert</mr:name>
+      <mr:title>Dune</mr:title>
+   </mr:author>
+   <mr:author>
+      <mr:name>Frank Herbert</mr:name>
+      <mr:title>Dune Messiah</mr:title>
+   </mr:author>
+</mr:author_list>

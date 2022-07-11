@@ -1,0 +1,143 @@
+{
+  "expand": "transitions",
+  "transitions": [
+    {
+      "id": "11",
+      "name": "Backlog",
+      "to": {
+        "self": "https://marlo-jira.atlassian.net/rest/api/3/status/10003",
+        "description": "",
+        "iconUrl": "https://marlo-jira.atlassian.net/",
+        "name": "Backlog",
+        "id": "10003",
+        "statusCategory": {
+          "self": "https://marlo-jira.atlassian.net/rest/api/3/statuscategory/2",
+          "id": 2,
+          "key": "new",
+          "colorName": "blue-gray",
+          "name": "To Do"
+        }
+      },
+      "hasScreen": false,
+      "isGlobal": true,
+      "isInitial": false,
+      "isAvailable": true,
+      "isConditional": false
+    },
+    {
+      "id": "21",
+      "name": "Selected for Development",
+      "to": {
+        "self": "https://marlo-jira.atlassian.net/rest/api/3/status/10004",
+        "description": "",
+        "iconUrl": "https://marlo-jira.atlassian.net/",
+        "name": "Selected for Development",
+        "id": "10004",
+        "statusCategory": {
+          "self": "https://marlo-jira.atlassian.net/rest/api/3/statuscategory/2",
+          "id": 2,
+          "key": "new",
+          "colorName": "blue-gray",
+          "name": "To Do"
+        }
+      },
+      "hasScreen": false,
+      "isGlobal": true,
+      "isInitial": false,
+      "isAvailable": true,
+      "isConditional": false
+    },
+    {
+      "id": "31",
+      "name": "In Progress",
+      "to": {
+        "self": "https://marlo-jira.atlassian.net/rest/api/3/status/3",
+        "description": "This issue is being actively worked on at the moment by the assignee.",
+        "iconUrl": "https://marlo-jira.atlassian.net/images/icons/statuses/inprogress.png",
+        "name": "In Progress",
+        "id": "3",
+        "statusCategory": {
+          "self": "https://marlo-jira.atlassian.net/rest/api/3/statuscategory/4",
+          "id": 4,
+          "key": "indeterminate",
+          "colorName": "yellow",
+          "name": "In Progress"
+        }
+      },
+      "hasScreen": false,
+      "isGlobal": true,
+      "isInitial": false,
+      "isAvailable": true,
+      "isConditional": false
+    },
+    {
+      "id": "41",
+      "name": "Done",
+      "to": {
+        "self": "https://marlo-jira.atlassian.net/rest/api/3/status/10001",
+        "description": "",
+        "iconUrl": "https://marlo-jira.atlassian.net/",
+        "name": "Done",
+        "id": "10001",
+        "statusCategory": {
+          "self": "https://marlo-jira.atlassian.net/rest/api/3/statuscategory/3",
+          "id": 3,
+          "key": "done",
+          "colorName": "green",
+          "name": "Done"
+        }
+      },
+      "hasScreen": false,
+      "isGlobal": true,
+      "isInitial": false,
+      "isAvailable": true,
+      "isConditional": false
+    },
+    {
+      "id": "51",
+      "name": "For Review",
+      "to": {
+        "self": "https://marlo-jira.atlassian.net/rest/api/3/status/10028",
+        "description": "This status is managed internally by Jira Software",
+        "iconUrl": "https://marlo-jira.atlassian.net/",
+        "name": "For Review",
+        "id": "10028",
+        "statusCategory": {
+          "self": "https://marlo-jira.atlassian.net/rest/api/3/statuscategory/4",
+          "id": 4,
+          "key": "indeterminate",
+          "colorName": "yellow",
+          "name": "In Progress"
+        }
+      },
+      "hasScreen": false,
+      "isGlobal": true,
+      "isInitial": false,
+      "isAvailable": true,
+      "isConditional": false
+    },
+    {
+      "id": "61",
+      "name": "Test",
+      "to": {
+        "self": "https://marlo-jira.atlassian.net/rest/api/3/status/10029",
+        "description": "Once the dev story complete the development & review phase, then it need to move to a Test phase. The tester need to verify and confirm the given card meets the acceptance criteria & also need to make sure it passed all test cases(regression & progression) associated with it.",
+        "iconUrl": "https://marlo-jira.atlassian.net/images/icons/statuses/generic.png",
+        "name": "Test",
+        "id": "10029",
+        "statusCategory": {
+          "self": "https://marlo-jira.atlassian.net/rest/api/3/statuscategory/4",
+          "id": 4,
+          "key": "indeterminate",
+          "colorName": "yellow",
+          "name": "In Progress"
+        }
+      },
+      "hasScreen": false,
+      "isGlobal": true,
+      "isInitial": false,
+      "isAvailable": true,
+      "isConditional": false
+    }
+  ]
+}

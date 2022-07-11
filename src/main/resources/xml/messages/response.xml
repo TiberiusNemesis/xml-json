@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response:response xmlns:response="http://www.marlo.com.au/training/response"
+                   xmlns:client="http://www.marlo.com.au/training/client"
+                   xmlns:order="http://www.marlo.com.au/training/order"
+                   xmlns:product="http://www.marlo.com.au/training/product">
+    <response:orders>
+        <order:order>
+            <orderNumber>1</orderNumber>
+            <client>
+                <client:clientName>Major Tom</client:clientName>
+                <client:age>31</client:age>
+                <client:gender>MALE</client:gender>
+                <client:documentId>197012</client:documentId>
+                <client:availableAccountCredit>50000.00</client:availableAccountCredit>
+            </client>
+            <products>
+                <product>
+                    <product:productCode>BOWIE1970</product:productCode>
+                    <product:description>David Bowie Album</product:description>
+                    <product:price>20.00</product:price>
+                    <product:category>ELECTRONICS</product:category>
+                </product>
+            </products>
+        </order:order>
+    </response:orders>
+</response:response>

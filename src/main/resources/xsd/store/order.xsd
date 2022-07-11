@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            xmlns:client="http://www.marlo.com.au/training/client"
+            xmlns:product="http://www.marlo.com.au/training/product"
+            xmlns:order="http://www.marlo.com.au/training/order"
+            targetNamespace="http://www.marlo.com.au/training/order"
+            attributeFormDefault="qualified">
+    <xs:import namespace="http://www.marlo.com.au/training/client" schemaLocation="client.xsd"/>
+    <xs:import namespace="http://www.marlo.com.au/training/product" schemaLocation="product.xsd"/>
+
+    <xs:element name="order" type="order:order"/>
+        <xs:complexType name="order">
+            <xs:all>
+                <xs:element name="orderNumber" minOccurs="1" maxOccurs="1">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:long"/>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="client" type="client:client" minOccurs="1" maxOccurs="1"/>
+                <xs:element name="products" minOccurs="1" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="product" type="product:product" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:all>
+        </xs:complexType>
+</xs:schema>

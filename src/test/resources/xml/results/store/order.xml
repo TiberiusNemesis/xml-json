@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns4:order xmlns:ns2="http://www.marlo.com.au/training/client" xmlns:ns4="http://www.marlo.com.au/training/order" xmlns:ns3="http://www.marlo.com.au/training/product">
+    <orderNumber>100</orderNumber>
+    <client>
+        <ns2:clientName>Little Jimmy</ns2:clientName>
+        <ns2:age>10</ns2:age>
+        <ns2:gender>MALE</ns2:gender>
+        <ns2:documentId>1507772416</ns2:documentId>
+        <ns2:availableAccountCredit>3.50</ns2:availableAccountCredit>
+    </client>
+    <products>
+        <product>
+            <ns3:productCode>RAMBO1970</ns3:productCode>
+            <ns3:description>Rambo Jungle Boots</ns3:description>
+            <ns3:price>2000.00</ns3:price>
+            <ns3:category>SHOES</ns3:category>
+        </product>
+    </products>
+</ns4:order>

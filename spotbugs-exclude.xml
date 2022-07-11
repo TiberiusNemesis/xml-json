@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter>
+    <Match>
+        <!-- False flag. -->
+        <Bug pattern="RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE"/>
+        <Class name="au.com.marlo.students.tdourado.SaxonXQueryTest"/>
+    </Match>
+</FindBugsFilter>

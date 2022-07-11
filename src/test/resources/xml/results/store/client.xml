@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<client xmlns="http://www.marlo.com.au/training/client">
+    <clientName>Little Jimmy</clientName>
+    <age>10</age>
+    <gender>MALE</gender>
+    <documentId>1507772416</documentId>
+    <availableAccountCredit>3.50</availableAccountCredit>
+</client>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            xmlns:client="http://www.marlo.com.au/training/client"
+            targetNamespace="http://www.marlo.com.au/training/client"
+            elementFormDefault="qualified">
+    <xs:element name="client" type="client:client"/>
+        <xs:complexType name="client">
+            <xs:sequence>
+                <xs:element name="clientName">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string" />
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="age">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:integer">
+                            <xs:minExclusive value="0"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="gender">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:enumeration value="MALE" />
+                            <xs:enumeration value="FEMALE" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="documentId">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:long">
+                            <xs:minExclusive value="0"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="availableAccountCredit">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:decimal">
+                            <xs:fractionDigits value="2" />
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+</xs:schema>

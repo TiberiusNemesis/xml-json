@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mr:result xmlns:mr="http://www.marlo.com.au/training/xquery">
+   <mr:average_price>19.285714285714285</mr:average_price>
+   <mr:expensive_book>
+      <mr:title>The Catcher in the Rye</mr:title>
+      <mr:current_price>25</mr:current_price>
+      <mr:price_difference>5.714285714285715</mr:price_difference>
+   </mr:expensive_book>
+   <mr:expensive_book>
+      <mr:title>Foundation Novels</mr:title>
+      <mr:current_price>30</mr:current_price>
+      <mr:price_difference>10.714285714285715</mr:price_difference>
+   </mr:expensive_book>
+   <mr:expensive_book>
+      <mr:title>Dune</mr:title>
+      <mr:current_price>25</mr:current_price>
+      <mr:price_difference>5.714285714285715</mr:price_difference>
+   </mr:expensive_book>
+</mr:result>
