@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mr:author_list xmlns:mr="http://www.marlo.com.au/training/xquery">
+   <mr:author>
+      <mr:name>Stephen King</mr:name>
+      <mr:title>The Green Mile</mr:title>
+   </mr:author>
+   <mr:author>
+      <mr:name>J. D. Salinger</mr:name>
+      <mr:title>The Catcher in the Rye</mr:title>
+   </mr:author>
+   <mr:author>
+      <mr:name>Issac Asimov</mr:name>
+      <mr:title>I, Robot</mr:title>
+   </mr:author>
+   <mr:author>
+      <mr:name>Isaac Asimov</mr:name>
+      <mr:title>Foundation Novels</mr:title>
+   </mr:author>
+   <mr:author>
+      <mr:name>Oscar Wilde</mr:name>
+      <mr:title>Pygmalion</mr:title>
+   </mr:author>
+   <mr:author>
+      <mr:name>Frank Herbert</mr:name>
+      <mr:title>Dune</mr:title>
+   </mr:author>
+   <mr:author>
+      <mr:name>Frank Herbert</mr:name>
+      <mr:title>Dune Messiah</mr:title>
+   </mr:author>
+</mr:author_list>

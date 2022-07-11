@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:request xmlns="http://www.marlo.com.au/training/client" xmlns:ns2="http://www.marlo.com.au/training/request">
+    <client>
+        <clientName>Little Jimmy</clientName>
+        <age>10</age>
+        <gender>MALE</gender>
+        <documentId>1507772416</documentId>
+        <availableAccountCredit>3.50</availableAccountCredit>
+    </client>
+</ns2:request>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response:response xmlns:response="http://www.marlo.com.au/training/response"
+                   xmlns:client="http://www.marlo.com.au/training/client"
+                   xmlns:order="http://www.marlo.com.au/training/order"
+                   xmlns:product="http://www.marlo.com.au/training/product">
+    <response:orders>
+        <order:order>
+            <orderNumber>2</orderNumber>
+            <client>
+                <client:clientName>Me</client:clientName>
+                <client:age>23</client:age>
+                <client:gender>MALE</client:gender>
+                <client:documentId>00001</client:documentId>
+                <client:availableAccountCredit>50000.00</client:availableAccountCredit>
+            </client>
+            <products>
+                <product>
+                    <product:productCode>NOIKE9999</product:productCode>
+                    <product:description>British Nike Sneakers - Bigfoot Sized</product:description>
+                    <product:price>71.25</product:price>
+                    <product:category>SHOES</product:category>
+                </product>
+            </products>
+        </order:order>
+        <order:order>
+            <orderNumber>3</orderNumber>
+            <client>
+                <client:clientName>Cinderella</client:clientName>
+                <client:age>19</client:age>
+                <client:gender>FEMALE</client:gender>
+                <client:documentId>00002</client:documentId>
+                <client:availableAccountCredit>50000.00</client:availableAccountCredit>
+            </client>
+            <products>
+
+            </products>
+        </order:order>
+    </response:orders>
+</response:response>

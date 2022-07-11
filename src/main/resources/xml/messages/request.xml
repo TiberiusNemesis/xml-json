@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<request:request xmlns:request="http://www.marlo.com.au/training/request"
+                 xmlns:client="http://www.marlo.com.au/training/client">
+    <client:client>
+        <client:clientName>Ground Control</client:clientName>
+        <client:age>40</client:age>
+        <client:gender>MALE</client:gender>
+        <client:documentId>250</client:documentId>
+        <client:availableAccountCredit>1000000.00</client:availableAccountCredit>
+    </client:client>
+</request:request>

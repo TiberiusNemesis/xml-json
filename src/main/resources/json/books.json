@@ -1,0 +1,56 @@
+{
+  "library": {
+    "publisher": [
+      {
+        "name": "Wiley Group",
+        "book": [
+          {
+            "title": "The Green Mile",
+            "author": "Stephen King",
+            "price": 18
+          },
+          {
+            "title": "The Catcher in the Rye",
+            "author": "J. D. Salinger",
+            "price": 25
+          },
+          {
+            "title": "I, Robot",
+            "author": "Isaac Asimov",
+            "price": 15
+          }
+        ]
+      },
+      {
+        "name": "Time Publishing",
+        "book": [
+          {
+            "title": "Foundation Novels",
+            "author": "Isaac Asimov",
+            "price": 30
+          },
+          {
+            "title": "Pygmalion",
+            "author": "Oscar Wilde",
+            "price": 10
+          }
+        ]
+      },
+      {
+        "name": "Amazon",
+        "book": [
+          {
+            "title": "Dune",
+            "author": "Frank Herbert",
+            "price": 25
+          },
+          {
+            "title": "Dune Messiah",
+            "author": "Frank Herbert",
+            "price": 12
+          }
+        ]
+      }
+    ]
+  }
+}

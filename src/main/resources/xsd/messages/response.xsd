@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:order="http://www.marlo.com.au/training/order"
+           xmlns:response="http://www.marlo.com.au/training/response"
+           targetNamespace="http://www.marlo.com.au/training/response"
+           elementFormDefault="qualified">
+    <xs:import namespace="http://www.marlo.com.au/training/order" schemaLocation="../store/order.xsd"/>
+    <xs:element name="response" type="response:response"/>
+        <xs:complexType name="response">
+            <xs:sequence>
+                <xs:element name="orders">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="order:order" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+</xs:schema>

@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft/2019-09/schema",
+  "type": "object",
+  "default": {},
+  "title": "Books.json Schema",
+  "required": [
+    "library"
+  ],
+  "properties": {
+    "library": {
+      "type": "object",
+      "default": {},
+      "title": "Library",
+      "required": [
+        "publisher"
+      ],
+      "properties": {
+        "publisher": {
+          "type": "array",
+          "default": [],
+          "title": "Publisher",
+          "items": {
+            "type": "object",
+            "title": "Publisher",
+            "required": [
+              "name",
+              "book"
+            ],
+            "properties": {
+              "name": {
+                "type": "string",
+                "title": "Publisher name"
+              },
+              "book": {
+                "type": "array",
+                "title": "Collection of books",
+                "items": {
+                  "type": "object",
+                  "title": "Book",
+                  "required": [
+                    "title",
+                    "author",
+                    "price"
+                  ],
+                  "properties": {
+                    "title": {
+                      "type": "string",
+                      "title": "Book title"
+                    },
+                    "author": {
+                      "type": "string",
+                      "title": "Author name"
+                    },
+                    "price": {
+                      "type": "number",
+                      "title": "Book price"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:dns="http://www.marlo.com.au/cim/manageTicketOfWork/v5"
+                  xmlns:ase="http://www.marlo.com.au/cim/common/accessSeeker/v3"
+                  xmlns:bin="http://www.marlo.com.au/cim/common/businessInteraction/v5"
+                  xmlns:exp="http://www.marlo.com.au/cim/common/exception/v3"
+                  xmlns:mhe="http://www.marlo.com.au/cim/common/messageHeader/v3"
+                  xmlns:msg="http://www.marlo.com.au/cim/common/message/v5"
+                  xmlns:pfm="http://www.marlo.com.au/cim/common/performance/v5"
+                  xmlns:pla="http://www.marlo.com.au/cim/common/place/v5"
+                  xmlns:prd="http://www.marlo.com.au/cim/common/product/v4"
+                  xmlns:pty="http://www.marlo.com.au/cim/common/party/v3"
+                  xmlns:rbe="http://www.marlo.com.au/cim/common/rootBusinessEntity/v3"
+                  xmlns:res="http://www.marlo.com.au/cim/common/resource/v5"
+                  xmlns:srv="http://www.marlo.com.au/cim/common/service/v5"
+                  xmlns:tme="http://www.marlo.com.au/cim/common/time/v5"
+                  xmlns:wrk="http://www.marlo.com.au/cim/common/workforce/v5"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soapenv:Header>
+    <mhe:MessageHeader>
+      <activityName>notifyWorkTicket</activityName>
+      <msgName>ManageTicketOfWorkNotificationnotifyWorkTicketRequest</msgName>
+      <businessServiceName>ManageTicketOfWork</businessServiceName>
+      <businessServiceVersion>V1.0</businessServiceVersion>
+      <msgType>Notification</msgType>
+      <!-- accessSeekerID optional for ManageTicketOfWork service -->
+      <accessSeekerID>SDP000000000000</accessSeekerID>
+      <correlationId>4eef4405-606e-46db-8c9c-af78e2811111</correlationId>
+      <security>Placeholder Security</security>
+      <priority>6</priority>
+      <communicationPattern>PlatformInitiatedNotification</communicationPattern>
+      <timestamp>2012-08-23T12:00:00Z</timestamp>
+      <businessChannel>Fulfilment</businessChannel>
+      <HeaderCharacteristicValue>
+        <value>TRUE</value>
+        <Characteristic>
+          <name>Mocked</name>
+        </Characteristic>
+      </HeaderCharacteristicValue>
+    </mhe:MessageHeader>
+  </soapenv:Header>
+  <soapenv:Body>
+    <dns:ManageTicketOfWorkNotification>
+
+      <AccessSeeker>
+        <accessSeekerName>John</accessSeekerName>
+      </AccessSeeker>
+
+      <!-- Notification Type -->
+      <notificationType>WorkOrderComplete</notificationType>
+      <!-- Contains Work Order details -->
+      <WorkOrder>
+        <!-- Work Order ID -->
+        <ID>TOW000000000001</ID>
+        <plannedCompletionDate>2011-05-10T10:00:00Z</plannedCompletionDate>
+        <!-- Work Order Status -->
+        <interactionStatus>COMPLETED</interactionStatus>
+        <!-- Work Order NBN Reference ID -->
+        <DescribedBy>
+          <value>511066-58917163</value>
+          <Characteristic>
+            <ID>NBN Reference ID</ID>
+            <!-- Values: 'ProductOrder', 'Incident', 'Project', 'CRM ID' -->
+            <type>CRM ID</type>
+          </Characteristic>
+        </DescribedBy>
+        <!-- ToW Template Version -->
+        <DescribedBy>
+          <value>V1.0</value>
+          <Characteristic>
+            <ID>ToW Template Version</ID>
+          </Characteristic>
+        </DescribedBy>
+        <!-- Job Requirement -->
+        <DescribedBy>
+          <value>Pre-Install - Internal (PCD to NTD)</value>
+          <Characteristic>
+            <ID>Job Requirement</ID>
+          </Characteristic>
+        </DescribedBy>
+        <!-- FDH Patch Shortfall -->
+        <DescribedBy>
+          <value>Yes</value>
+          <Characteristic>
+            <ID>FDH Patch</ID>
+            <type>Shortfall</type>
+          </Characteristic>
+        </DescribedBy>
+        <!-- Lead In Drop Shortfall -->
+        <DescribedBy>
+          <value>Yes</value>
+          <Characteristic>
+            <ID>Lead In Drop</ID>
+            <type>Shortfall</type>
+          </Characteristic>
+        </DescribedBy>
+        <!-- NTD Install Shortfall -->
+        <DescribedBy>
+          <value>Yes</value>
+          <Characteristic>
+            <ID>NTD Install</ID>
+            <type>Shortfall</type>
+          </Characteristic>
+        </DescribedBy>
+        <!-- JDSU Test -->
+        <DescribedBy>
+          <value>No</value>
+          <Characteristic>
+            <ID>JDSU Test</ID>
+            <type>Shortfall</type>
+          </Characteristic>
+        </DescribedBy>
+        <!-- Fibre Application ID -->
+        <DescribedBy>
+          <value>AYCA-HVMVD</value>
+          <Characteristic>
+            <ID>Fibre Application ID</ID>
+          </Characteristic>
+        </DescribedBy>
+        <!-- FDH Build Complete -->
+        <DescribedBy>
+          <value>Yes</value>
+          <Characteristic>
+            <ID>FDH Patch Build Completed</ID>
+            <type>Demand</type>
+          </Characteristic>
+        </DescribedBy>
+        <!-- Drop Build Complete -->
+        <DescribedBy>
+          <value>Yes</value>
+          <Characteristic>
+            <ID>Drop Build Completed</ID>
+            <type>Demand</type>
+          </Characteristic>
+        </DescribedBy>
+        <!-- NTD Build Complete -->
+        <DescribedBy>
+          <value>Yes</value>
+          <Characteristic>
+            <ID>NTD Build Completed</ID>
+            <type>Demand</type>
+          </Characteristic>
+        </DescribedBy>
+        <!-- Ticket Of Work Build Completed -->
+        <DescribedBy>
+          <value>Yes</value>
+          <Characteristic>
+            <ID>Ticket Of Work Build Completed</ID>
+          </Characteristic>
+        </DescribedBy>
+        <!-- Drop Type -->
+        <DescribedBy>
+          <value>Demand</value>
+          <Characteristic>
+            <ID>Drop Type</ID>
+            <type>Drop</type>
+          </Characteristic>
+        </DescribedBy>
+        <!-- Only supplied by SDP. Always provided -->
+        <DescribedBy>
+          <value>Aerial</value>
+          <Characteristic>
+            <ID>Constructed Drop Installation Type</ID>
+            <type>Drop</type>
+          </Characteristic>
+        </DescribedBy>
+        <!-- Pre-Call Performed -->
+        <DescribedBy>
+          <value>Yes</value>
+          <Characteristic>
+            <ID>Pre-Call Performed</ID>
+          </Characteristic>
+        </DescribedBy>
+        <!-- Confirmation Prior -->
+        <DescribedBy>
+          <value>Yes</value>
+          <Characteristic>
+            <ID>ConfirmationPrior</ID>
+          </Characteristic>
+        </DescribedBy>
+        <!-- Confirmation Guides Receieved -->
+        <DescribedBy>
+          <value>Yes</value>
+          <Characteristic>
+            <ID>ConfirmationGuidesReceived</ID>
+          </Characteristic>
+        </DescribedBy>
+        <!-- Confirmation Job Completed -->
+        <DescribedBy>
+          <value>Yes</value>
+          <Characteristic>
+            <ID>ConfirmationJobCompleted</ID>
+          </Characteristic>
+        </DescribedBy>
+        <!-- Project Number -->
+        <DescribedBy>
+          <value>2VIC-FSAM-02</value>
+          <Characteristic>
+            <ID>Project Number</ID>
+          </Characteristic>
+        </DescribedBy>
+        <!-- Workforce ID -->
+        <DescribedBy>
+          <value>ACME</value>
+          <Characteristic>
+            <ID>Workforce ID</ID>
+          </Characteristic>
+        </DescribedBy>
+        <!-- Project type -->
+        <DescribedBy>
+          <value>Customer Connect Project Number</value>
+          <Characteristic>
+            <ID>Project Type</ID>
+          </Characteristic>
+        </DescribedBy>
+        <!-- Identifies if the Ticket of Work is related to Demand or Build Drops -->
+        <type>Operations</type>
+        <!-- Identifies when the Ticket of Work was last updated -->
+        <BusinessInteractionModifiedBy>
+          <revisionDate>
+            <startDateTime>2011-05-10T09:00:00Z</startDateTime>
+          </revisionDate>
+        </BusinessInteractionModifiedBy>
+        <!-- Only updated by NBN Co. -->
+        <Priority>
+          <priorityValues>35</priorityValues>
+        </Priority>
+        <!-- Work Order Status Reason -->
+        <interactionStatusReason>COMPLETED</interactionStatusReason>
+        <!-- Closure Codes -->
+        <!-- Only provided by SDP -->
+        <ClosureCode>
+          <symptom>BTF</symptom>
+          <cause>STD</cause>
+          <resolution>UOB</resolution>
+          <summary>NTD Installed</summary>
+        </ClosureCode>
+        <!-- Attended Site Date -->
+        <attendedSiteDate>2011-05-10T09:00:00Z</attendedSiteDate>
+        <!-- Activation Date, Only provided if NTD activation is automated via
+          ManageWorkforce service -->
+        <activationDate>2011-05-10T10:00:00Z</activationDate>
+        <!-- Left Site Date -->
+        <leftSiteDate>2011-05-10T11:00:00Z</leftSiteDate>
+        <!-- Work Order Type -->
+        <workOrderType>GreenfieldPreInstall</workOrderType>
+        <!-- Work Order Item Level -->
+        <!-- NBN Location ID -->
+        <WorkOrderComprisedOf>
+          <ItemInvolvesLocation>
+            <Place xsi:type="pla:NBNLocation">
+              <!-- NBN Location ID -->
+              <ID>LOC000000336914</ID>
+              <!-- Valid values can be: 'Urban', 'Major Rural', 'Minor Rural', 'Remote' -->
+              <DescribedBy>
+                <value>Urban</value>
+                <Characteristic>
+                  <ID>Region</ID>
+                </Characteristic>
+              </DescribedBy>
+            </Place>
+          </ItemInvolvesLocation>
+        </WorkOrderComprisedOf>
+        <!-- Appointment Details -->
+        <WorkOrderComprisedOf>
+          <ItemInvolvesAppointment>
+            <ID>999999999999999</ID>
+            <SpecifiedBy>
+              <name>Demand Type</name>
+              <type>PreInstall</type>
+            </SpecifiedBy>
+          </ItemInvolvesAppointment>
+        </WorkOrderComprisedOf>
+        <!-- FDH -->
+        <WorkOrderComprisedOf>
+          <ItemInvolvesResource>
+            <!-- FDH Name -->
+            <ID>2ARM-01-02-FDH-001</ID>
+            <!-- FDH Status -->
+            <DescribedBy>
+              <value>In-Service</value>
+              <Characteristic>
+                <ID>FDH Status</ID>
+                <type>FDH</type>
+              </Characteristic>
+            </DescribedBy>
+            <!-- Patch Name -->
+            <DescribedBy>
+              <value>2ARM-01-02-FDH-02-21</value>
+              <Characteristic>
+                <ID>FDH Patch Name</ID>
+                <type>FDH</type>
+              </Characteristic>
+            </DescribedBy>
+            <SpecifiedBy>
+              <ID>FDH</ID>
+            </SpecifiedBy>
+            <!-- Geocode/Latitiude and Longitude for the Resource -->
+            <InvolvesPlace xsi:type="pla:ResourceLocation">
+              <type>Resource Location</type>
+              <Geocode>
+                <latitude>-19.29981708</latitude>
+                <longitude>146.7733612</longitude>
+              </Geocode>
+            </InvolvesPlace>
+            <!-- Nearest address information -->
+            <InvolvesPlace xsi:type="pla:Location">
+              <type>Nearest Address</type>
+              <!-- Physical Address -->
+              <PhysicalAddress>
+                <addressSiteName>UNIVERSITY OF MELBOURNE</addressSiteName>
+                <roadNumber1>801</roadNumber1>
+                <roadName>SWANSTON</roadName>
+                <roadTypeCode>ST</roadTypeCode>
+                <localityName>CARLTON</localityName>
+                <stateTerritoryCode>VIC</stateTerritoryCode>
+              </PhysicalAddress>
+            </InvolvesPlace>
+          </ItemInvolvesResource>
+          <!-- Local Port -->
+          <ItemInvolvesResource>
+            <!-- Local Port Number -->
+            <ID>114</ID>
+            <!-- Local Port Slot Name -->
+            <DescribedBy>
+              <value>2ARM-01-02-PAR-003</value>
+              <Characteristic>
+                <ID>Slot Name</ID>
+                <type>Local Port</type>
+              </Characteristic>
+            </DescribedBy>
+            <SpecifiedBy>
+              <ID>Local Port</ID>
+            </SpecifiedBy>
+          </ItemInvolvesResource>
+          <ItemInvolvesResource>
+            <!-- Splitter Port Number -->
+            <ID>OUT11</ID>
+            <!-- Splitter Port Rack Name -->
+            <DescribedBy>
+              <value>2ARM-01-02-FDH-001 RACK</value>
+              <Characteristic>
+                <ID>Rack Name</ID>
+                <type>Splitter Port</type>
+              </Characteristic>
+            </DescribedBy>
+            <!-- Splitter Port Chassis Name -->
+            <DescribedBy>
+              <value>2ARM-01-02-SBL-006</value>
+              <Characteristic>
+                <ID>Chassis Name</ID>
+                <type>Splitter Port</type>
+              </Characteristic>
+            </DescribedBy>
+            <!-- Splitter Port Slot Name -->
+            <DescribedBy>
+              <value>2ARM-01-02-SPL-006</value>
+              <Characteristic>
+                <ID>Slot Name</ID>
+                <type>Splitter Port</type>
+              </Characteristic>
+            </DescribedBy>
+            <SpecifiedBy>
+              <ID>Splitter Port</ID>
+            </SpecifiedBy>
+          </ItemInvolvesResource>
+        </WorkOrderComprisedOf>
+        <!-- Lead In -->
+        <WorkOrderComprisedOf>
+          <!-- Multiport -->
+          <ItemInvolvesResource>
+            <ID>2ARM-01-02-MPT-001</ID>
+            <!-- Multiport Port Number -->
+            <DescribedBy>
+              <value>4</value>
+              <Characteristic>
+                <ID>Port Number</ID>
+                <type>Multiport</type>
+              </Characteristic>
+            </DescribedBy>
+            <!-- Multiport Type -->
+            <DescribedBy>
+              <value>NBN_MPT_8PORT</value>
+              <Characteristic>
+                <ID>Type</ID>
+                <type>Multiport</type>
+              </Characteristic>
+            </DescribedBy>
+            <!-- Multiport Status -->
+            <DescribedBy>
+              <value>In-Service</value>
+              <Characteristic>
+                <ID>Multiport Status</ID>
+                <type>Multiport</type>
+              </Characteristic>
+            </DescribedBy>
+            <SpecifiedBy>
+              <ID>Multiport</ID>
+            </SpecifiedBy>
+            <EntityRelationship>
+              <Entity xsi:type="res:Resource">
+                <!-- Support Structure Type Name -->
+                <ID>2ABC-01-08-POL-027</ID>
+                <!-- Support Structure Type Plant Owner -->
+                <DescribedBy>
+                  <value>ERGON ENERGY</value>
+                  <Characteristic>
+                    <ID>Plant Owner</ID>
+                    <type>Support Structure</type>
+                  </Characteristic>
+                </DescribedBy>
+                <!-- Support Structure Type -->
+                <DescribedBy>
+                  <value>Pole</value>
+                  <Characteristic>
+                    <ID>Type</ID>
+                    <type>Support Structure</type>
+                  </Characteristic>
+                </DescribedBy>
+                <DescribedBy>
+                  <value>In-Service</value>
+                  <Characteristic>
+                    <ID>Support Structure Status</ID>
+                    <type>Support Structure</type>
+                  </Characteristic>
+                </DescribedBy>
+                <DescribedBy>
+                  <value>7687688</value>
+                  <Characteristic>
+                    <ID>Support Structure Additional ID</ID>
+                    <type>Support Structure</type>
+                  </Characteristic>
+                </DescribedBy>
+                <SpecifiedBy>
+                  <ID>Support Structure</ID>
+                </SpecifiedBy>
+                <!-- Geocode/Latitiude and Longitude for the Resource -->
+                <InvolvesPlace xsi:type="pla:ResourceLocation">
+                  <type>Resource Location</type>
+                  <Geocode>
+                    <latitude>-19.29981708</latitude>
+                    <longitude>146.7733612</longitude>
+                  </Geocode>
+                </InvolvesPlace>
+                <!-- Nearest address information -->
+                <InvolvesPlace xsi:type="pla:Location">
+                  <type>Nearest Address</type>
+                  <!-- Physical Address -->
+                  <PhysicalAddress>
+                    <addressSiteName>UNIVERSITY OF MELBOURNE</addressSiteName>
+                    <roadNumber1>801</roadNumber1>
+                    <roadName>SWANSTON</roadName>
+                    <roadTypeCode>ST</roadTypeCode>
+                    <localityName>CARLTON</localityName>
+                    <stateTerritoryCode>VIC</stateTerritoryCode>
+                  </PhysicalAddress>
+                </InvolvesPlace>
+              </Entity>
+            </EntityRelationship>
+          </ItemInvolvesResource>
+          <!-- Telstra LIC Items -->
+          <ItemInvolvesResource>
+            <!-- LIC Id -->
+            <ID>TLS-123456</ID>
+            <!-- LIC presence -->
+            <DescribedBy>
+              <value>Yes</value>
+              <Characteristic>
+                <ID>LIC Present</ID>
+                <type>Telstra LIC</type>
+              </Characteristic>
+            </DescribedBy>
+            <!-- Is Telstra LIC -->
+            <DescribedBy>
+              <value>Yes</value>
+              <Characteristic>
+                <ID>Non Telstra LIC</ID>
+                <type>Telstra LIC</type>
+              </Characteristic>
+            </DescribedBy>
+            <!-- Telstra LIC Handed Over -->
+            <DescribedBy>
+              <value>Yes</value>
+              <Characteristic>
+                <ID>Handed Over</ID>
+                <type>Telstra LIC</type>
+              </Characteristic>
+            </DescribedBy>
+            <!-- Telstra LIC Date of Handover -->
+            <DescribedBy>
+              <value>2012-09-23</value>
+              <Characteristic>
+                <ID>Date of Handover</ID>
+                <type>Telstra LIC</type>
+              </Characteristic>
+            </DescribedBy>
+            <!-- Telstra LIC Pull Through Activity Performed -->
+            <DescribedBy>
+              <value>Yes</value>
+              <Characteristic>
+                <ID>Pull Through Activity Performed</ID>
+                <type>Telstra LIC</type>
+              </Characteristic>
+            </DescribedBy>
+            <!-- Telstra LIC Pull Through Reference Number -->
+            <DescribedBy>
+              <value>Free Text</value>
+              <Characteristic>
+                <ID>Pull Through Reference Number</ID>
+                <type>Telstra LIC</type>
+              </Characteristic>
+            </DescribedBy>
+            <!-- Telstra LIC Reinstatement Time -->
+            <DescribedBy>
+              <value>2012-09-23T12:00:00Z</value>
+              <Characteristic>
+                <ID>Reinstatement Time</ID>
+                <type>Telstra LIC</type>
+              </Characteristic>
+            </DescribedBy>
+            <!-- Telstra LIC Reinstatement Time -->
+            <DescribedBy>
+              <value>PASS</value>
+              <Characteristic>
+                <ID>Reinstatement Pass</ID>
+                <type>Telstra LIC</type>
+              </Characteristic>
+            </DescribedBy>
+            <!-- Telstra LIC Non Usage Reason Code -->
+            <DescribedBy>
+              <value>LOC</value>
+              <Characteristic>
+                <ID>Non Usage Reason Code</ID>
+                <type>Telstra LIC</type>
+              </Characteristic>
+            </DescribedBy>
+            <!-- Telstra LIC Non Usage Reason Code -->
+            <DescribedBy>
+              <value>Damaged</value>
+              <Characteristic>
+                <ID>FurtherReasonTelstraLICNotUsed</ID>
+                <type>Telstra LIC</type>
+              </Characteristic>
+            </DescribedBy>
+            <!-- Telstra LIC Non Usage Reason Code -->
+            <DescribedBy>
+              <value>24</value>
+              <Characteristic>
+                <ID>NumberOfCablesInLIC</ID>
+                <type>Telstra LIC</type>
+              </Characteristic>
+            </DescribedBy>
+            <!-- Telstra LIC Termination Box Used -->
+            <DescribedBy>
+              <value>No</value>
+              <Characteristic>
+                <ID>Termination Box Used</ID>
+                <type>Telstra LIC</type>
+              </Characteristic>
+            </DescribedBy>
+            <SpecifiedBy>
+              <ID>Telstra LIC</ID>
+            </SpecifiedBy>
+          </ItemInvolvesResource>
+          <!-- Lead In Fibre -->
+          <ItemInvolvesResource>
+            <!-- Lead In type -->
+            <DescribedBy>
+              <value>Underground</value>
+              <Characteristic>
+                <ID>Type</ID>
+                <type>NBN SDS Cable</type>
+              </Characteristic>
+            </DescribedBy>
+            <!-- Lead In type -->
+            <DescribedBy>
+              <value>10</value>
+              <Characteristic>
+                <ID>Length</ID>
+                <type>NBN SDS Cable</type>
+              </Characteristic>
+            </DescribedBy>
+            <!-- Lead In owner -->
+            <DescribedBy>
+              <value>ACME</value>
+              <Characteristic>
+                <ID>Owner Name</ID>
+                <type>NBN SDS Cable</type>
+              </Characteristic>
+            </DescribedBy>
+            <SpecifiedBy>
+              <ID>NBN SDS Cable</ID>
+            </SpecifiedBy>
+          </ItemInvolvesResource>
+          <!-- PCD -->
+          <ItemInvolvesResource>
+            <!-- PCD Id -->
+            <ID>2ARM-01-02-PCD-074</ID>
+            <DescribedBy>
+              <value>Constructed</value>
+              <Characteristic>
+                <ID>PCD Status</ID>
+                <type>PCD</type>
+              </Characteristic>
+            </DescribedBy>
+            <!-- PCD Location -->
+            <DescribedBy>
+              <value>Attached to garage</value>
+              <Characteristic>
+                <ID>Location Comment</ID>
+              </Characteristic>
+            </DescribedBy>
+            <SpecifiedBy>
+              <ID>PCD</ID>
+            </SpecifiedBy>
+          </ItemInvolvesResource>
+        </WorkOrderComprisedOf>
+        <!-- NTD -->
+        <WorkOrderComprisedOf>
+          <ItemInvolvesResource>
+            <ID>NTD000000270764</ID>
+            <!-- NTD Location - Values: 'Indoor', 'Outdoor' -->
+            <DescribedBy>
+              <value>Indoor</value>
+              <Characteristic>
+                <ID>Location</ID>
+                <type>NTD</type>
+              </Characteristic>
+            </DescribedBy>
+            <!-- NTD Type - Values: 'Internal', 'External' - Only populated for
+              Fibre -->
+            <DescribedBy>
+              <value>Internal</value>
+              <Characteristic>
+                <ID>Type</ID>
+                <type>NTD</type>
+              </Characteristic>
+            </DescribedBy>
+            <!-- NTD Serial -->
+            <DescribedBy>
+              <value>123-456-789</value>
+              <Characteristic>
+                <ID>Serial</ID>
+                <type>NTD</type>
+              </Characteristic>
+            </DescribedBy>
+            <!-- PSU Serial -->
+            <DescribedBy>
+              <value>987-456-123</value>
+              <Characteristic>
+                <ID>Serial</ID>
+                <type>PSU</type>
+              </Characteristic>
+            </DescribedBy>
+            <!-- Only populated for Fibre NTD -->
+            <DescribedBy>
+              <value>Standard</value>
+              <Characteristic>
+                <ID>Power Supply Type</ID>
+                <type>PSU</type>
+              </Characteristic>
+            </DescribedBy>
+            <DescribedBy>
+              <value>AC</value>
+              <Characteristic>
+                <ID>Power Type</ID>
+                <type>PSU</type>
+              </Characteristic>
+            </DescribedBy>
+            <SpecifiedBy>
+              <ID>NTD</ID>
+            </SpecifiedBy>
+          </ItemInvolvesResource>
+        </WorkOrderComprisedOf>
+        <!-- HSE Work Order Items -->
+        <WorkOrderComprisedOf>
+          <ItemInvolvesWork>
+            <!-- Complete Job Safely -->
+            <!-- Values: 'Yes - Standard', 'Yes - Additional', 'No' -->
+            <DescribedBy>
+              <value>Yes - Standard</value>
+              <Characteristic>
+                <ID>Complete Job Safely</ID>
+              </Characteristic>
+            </DescribedBy>
+            <!-- HSE -->
+            <SpecifiedBy>
+              <ID>HSE</ID>
+            </SpecifiedBy>
+          </ItemInvolvesWork>
+        </WorkOrderComprisedOf>
+        <!-- Data Validation -->
+        <WorkOrderComprisedOf>
+          <ItemInvolvesWork>
+            <!-- Data Integrity -->
+            <DescribedBy>
+              <value>Yes</value>
+              <Characteristic>
+                <ID>Data Integrity</ID>
+              </Characteristic>
+            </DescribedBy>
+            <!-- Data Integrity Summary -->
+            <DescribedBy>
+              <value>Pole identifier was incorrect, should have been 1234
+              </value>
+              <Characteristic>
+                <ID>Data Integrity Summary</ID>
+              </Characteristic>
+            </DescribedBy>
+            <!-- Data Validation -->
+            <SpecifiedBy>
+              <ID>Data Validation</ID>
+            </SpecifiedBy>
+          </ItemInvolvesWork>
+        </WorkOrderComprisedOf>
+        <!-- Developer Agreement -->
+        <WorkOrderComprisedOf>
+          <ItemInvolvesWork>
+            <!-- Preferred Activation Time -->
+            <DescribedBy>
+              <value>2012-09-23T02:00:00Z</value>
+              <Characteristic>
+                <ID>Preferred Activation Date Time</ID>
+              </Characteristic>
+            </DescribedBy>
+            <!-- Loss Of Access Date -->
+            <DescribedBy>
+              <value>2012-09-23</value>
+              <Characteristic>
+                <ID>Loss Of Access Date</ID>
+              </Characteristic>
+            </DescribedBy>
+            <!-- Developer Agreement -->
+            <SpecifiedBy>
+              <ID>Developer Agreement</ID>
+            </SpecifiedBy>
+          </ItemInvolvesWork>
+        </WorkOrderComprisedOf>
+      </WorkOrder>
+    </dns:ManageTicketOfWorkNotification>
+  </soapenv:Body>
+</soapenv:Envelope>
